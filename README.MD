@@ -107,21 +107,6 @@ botley-universal-discord-egg/
 │── example.js
 ```
 
----
-
-# 📸 Screenshots (Placeholders)
-
-### Panel
-![panel](https://via.placeholder.com/800x400?text=Pterodactyl+Panel)
-
-### File Manager
-![files](https://via.placeholder.com/800x400?text=File+Manager)
-
-### Runtime Auto Detection
-![runtime](https://via.placeholder.com/800x400?text=Auto+Detection)
-
----
-
 # 📝 Changelog
 
 ### v1.0.0
