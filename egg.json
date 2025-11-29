@@ -1,0 +1,18 @@
+{
+    "name": "Botley Universal Discord Egg",
+    "author": "Botley Hosting",
+    "description": "Base egg for hosting Python or Node.js Discord bots.",
+    "features": null,
+    "variables": [],
+    "startup": "/bin/bash startup.sh",
+    "scripts": {
+        "installation": {
+            "script": "#!/bin/bash\napt update -y\napt install -y python3 python3-pip\n\ncurl -fsSL https://deb.nodesource.com/setup_20.x | bash -\napt install -y nodejs\n\npip3 install discord.py nextcord hikari hikari-lightbulb py-cord\nnpm install discord.js@14\n\n[ -f requirements.txt ] && pip3 install -r requirements.txt\n[ -f package.json ] && npm install\n\necho \"Installation done.\"\n",
+            "container": "debian:bookworm",
+            "entrypoint": "bash"
+        }
+    },
+    "docker_images": {
+        "Debian": "debian:bookworm"
+    }
+}
